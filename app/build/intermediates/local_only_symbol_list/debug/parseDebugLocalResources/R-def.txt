@@ -1,0 +1,34 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id BtBegin
+id BtChoice1
+id BtChoice2
+id BtChoice4
+id BtChoice5
+id BtNext
+id BtRestart
+id BtStart
+id Btchoice3
+id EtName
+id IvQuestion
+id TvQuestion
+id TvScore
+id TvTeam
+id TvTimer
+id TvTitle
+id main
+layout activity_login
+layout activity_result
+layout activity_splash
+layout activity_test
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.MultipleChoiceTest
+style Theme.MultipleChoiceTest
+xml backup_rules
+xml data_extraction_rules

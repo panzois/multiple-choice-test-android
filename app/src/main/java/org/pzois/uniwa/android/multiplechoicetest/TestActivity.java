@@ -27,7 +27,13 @@ public class TestActivity extends AppCompatActivity {
         });
 
         Intent intent = getIntent();
-        username = intent.getStringExtra(LoginActivity.EXTRA_USERNAME);
+        username = intent.getStringExtra(AppConstants.EXTRA_USERNAME);
+
+        if (username == null || username.trim().isEmpty()) {
+            Log.e("TestActivity", "Missing username");
+            finish();
+            return;
+        }
 
         Log.d("TestActivity", "Username received: " + username);
     }
