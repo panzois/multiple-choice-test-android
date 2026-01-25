@@ -14,7 +14,6 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class LoginActivity extends AppCompatActivity {
 
-    public static final String EXTRA_USERNAME = "username";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
             }
 
             Intent i = new Intent(LoginActivity.this, TestActivity.class);
-            i.putExtra(EXTRA_USERNAME, name);
+            i.putExtra(AppConstants.EXTRA_USERNAME, name);
             startActivity(i);
         });
     }
