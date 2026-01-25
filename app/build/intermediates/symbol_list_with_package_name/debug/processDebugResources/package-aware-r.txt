@@ -3659,12 +3659,12 @@ id BOTTOM_START
 id BtBegin
 id BtChoice1
 id BtChoice2
+id BtChoice3
 id BtChoice4
 id BtChoice5
 id BtNext
 id BtRestart
 id BtStart
-id Btchoice3
 id CTRL
 id EtName
 id FUNCTION
