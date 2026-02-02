@@ -1,8 +1,14 @@
 package org.pzois.uniwa.android.multiplechoicetest;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,9 +18,22 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.android.material.button.MaterialButton;
 import android.content.res.ColorStateList;
 
+import com.example.multiplechoicetest.Question;
+import com.example.multiplechoicetest.QuestionBank;
+import com.example.multiplechoicetest.QuizEngine;
+
+import java.util.List;
+
 public class TestActivity extends AppCompatActivity {
 
     private String username;
+    private QuizEngine engine;
+    private QuestionBank db;
+
+    private TextView tvTimer, tvQuestion;
+    private ImageView ivQuestion;
+    private Button[] choiceButtons;
+    private Button btNext;
 
     private MaterialButton BtChoice1, BtChoice2, BtChoice3, BtChoice4, BtChoice5;
 
@@ -53,7 +72,13 @@ public class TestActivity extends AppCompatActivity {
         BtChoice4.setOnClickListener(v -> setSelectedChoice(BtChoice4, BtChoice1, BtChoice2, BtChoice3, BtChoice4, BtChoice5));
         BtChoice5.setOnClickListener(v -> setSelectedChoice(BtChoice5, BtChoice1, BtChoice2, BtChoice3, BtChoice4, BtChoice5));
 
-        Log.d("TestActivity", "Username received: " + username);
+    private void goToResult(int score, int total) {
+        Intent i = new Intent(TestActivity.this, ResultActivity.class);
+        i.putExtra(AppConstants.EXTRA_USERNAME, username);
+        i.putExtra(AppConstants.EXTRA_SCORE, score);
+        i.putExtra(AppConstants.EXTRA_TOTAL, total);
+        startActivity(i);
+        finish();
     }
 
     private void setSelectedChoice(MaterialButton selected, MaterialButton... all) {
