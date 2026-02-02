@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="purple_outline">#B39DDB</color>
+    <color name="purple_pressed">#D1C4E9</color>
+    <color name="purple_soft">#EDE7F6</color>
+    <color name="teal_200">#069494</color>
+    <color name="teal_bg">#E6F4F1</color>
+    <color name="teal_sea">#9EFCFF</color>
+    <color name="text_primary">#1F1F1F</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Multiple Choice Test</string>
+    <style name="Base.Theme.MultipleChoiceTest" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.MultipleChoiceTest" parent="Base.Theme.MultipleChoiceTest"/>
+</resources>

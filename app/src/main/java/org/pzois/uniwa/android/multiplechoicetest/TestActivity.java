@@ -15,6 +15,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import com.google.android.material.button.MaterialButton;
+import android.content.res.ColorStateList;
 
 import com.example.multiplechoicetest.Question;
 import com.example.multiplechoicetest.QuestionBank;
@@ -33,6 +35,8 @@ public class TestActivity extends AppCompatActivity {
     private Button[] choiceButtons;
     private Button btNext;
 
+    private MaterialButton BtChoice1, BtChoice2, BtChoice3, BtChoice4, BtChoice5;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,99 +49,28 @@ public class TestActivity extends AppCompatActivity {
             return insets;
         });
 
-        username = getIntent().getStringExtra(AppConstants.EXTRA_USERNAME);
+        Intent intent = getIntent();
+        username = intent.getStringExtra(AppConstants.EXTRA_USERNAME);
 
-        bindViews();
-        bindEvents();
-
-        // Role B Initialization
-        db = new QuestionBank(this);
-        List<Question> randomQuestions = db.getRandomQuestions(5);
-        engine = new QuizEngine(username, randomQuestions);
-
-
-        updateUI(); // Εμφάνιση 1ης ερώτησης
-    }
-
-
-
-    private void bindViews() {
-        tvTimer = findViewById(R.id.TvTimer);
-        tvQuestion = findViewById(R.id.TvQuestion);
-        ivQuestion = findViewById(R.id.IvQuestion);
-        choiceButtons = new Button[]{
-                findViewById(R.id.BtChoice1), findViewById(R.id.BtChoice2),
-                findViewById(R.id.BtChoice3), findViewById(R.id.BtChoice4),
-                findViewById(R.id.BtChoice5)
-        };
-        btNext = findViewById(R.id.BtNext);
-    }
-
-    private void bindEvents() {
-        for (int i = 0; i < choiceButtons.length; i++) {
-            final int index = i;
-            choiceButtons[i].setOnClickListener(v -> onAnswerSelected(index));
-        }
-        btNext.setOnClickListener(v -> onNext());
-    }
-
-    private void updateUI() {
-        Question current = engine.getCurrentQuestion();
-        if (current == null) return;
-
-        tvQuestion.setText(current.getText());
-
-        // ΔΙΑΧΕΙΡΙΣΗ ΕΙΚΟΝΑΣ (Απαίτηση Εκφώνησης)
-        if (current.getImageResId() != 0) {
-            ivQuestion.setImageResource(current.getImageResId());
-            ivQuestion.setVisibility(View.VISIBLE);
-        } else {
-            ivQuestion.setVisibility(View.GONE);
+        if (username == null || username.trim().isEmpty()) {
+            Log.e("TestActivity", "Missing username");
+            finish();
+            return;
         }
 
-        List<String> options = current.getOptions();
-        for (int i = 0; i < choiceButtons.length; i++) {
-            if (i < options.size()) {
-                choiceButtons[i].setText(options.get(i));
-                choiceButtons[i].setVisibility(View.VISIBLE);
-                choiceButtons[i].setEnabled(true);
-                choiceButtons[i].setBackgroundColor(Color.parseColor("#6200EE"));
-            } else {
-                choiceButtons[i].setVisibility(View.GONE);
-            }
-        }
-    }
+        // Bind buttons (IDs μένουν ίδια)
+        BtChoice1 = findViewById(R.id.BtChoice1);
+        BtChoice2 = findViewById(R.id.BtChoice2);
+        BtChoice3 = findViewById(R.id.BtChoice3);
+        BtChoice4 = findViewById(R.id.BtChoice4);
+        BtChoice5 = findViewById(R.id.BtChoice5);
 
-    private void onAnswerSelected(int choiceIndex) {
-        engine.submitAnswer(choiceIndex);
-
-        int correctIndex = engine.getCurrentQuestion().getCorrectOptionIndex();
-
-        for (int i = 0; i < choiceButtons.length; i++) {
-            choiceButtons[i].setEnabled(false); // Κλειδώνουμε τα κουμπιά
-
-            if (i == correctIndex) {
-                choiceButtons[i].setBackgroundColor(Color.GREEN);
-            } else if (i == choiceIndex) {
-                choiceButtons[i].setBackgroundColor(Color.RED);
-            }
-        }
-        btNext.setVisibility(View.VISIBLE);
-    }
-
-    private void onNext() {
-        if (engine.nextQuestion()) {
-            updateUI(); 
-            btNext.setVisibility(View.INVISIBLE); 
-        } else {
-            finishQuiz(); // Τέλος quiz
-        }
-    }
-
-    private void finishQuiz() {
-        db.saveScore(username, engine.getScore());
-        goToResult(engine.getScore(), engine.getTotalQuestions());
-    }
+        // Click listeners: selected state
+        BtChoice1.setOnClickListener(v -> setSelectedChoice(BtChoice1, BtChoice1, BtChoice2, BtChoice3, BtChoice4, BtChoice5));
+        BtChoice2.setOnClickListener(v -> setSelectedChoice(BtChoice2, BtChoice1, BtChoice2, BtChoice3, BtChoice4, BtChoice5));
+        BtChoice3.setOnClickListener(v -> setSelectedChoice(BtChoice3, BtChoice1, BtChoice2, BtChoice3, BtChoice4, BtChoice5));
+        BtChoice4.setOnClickListener(v -> setSelectedChoice(BtChoice4, BtChoice1, BtChoice2, BtChoice3, BtChoice4, BtChoice5));
+        BtChoice5.setOnClickListener(v -> setSelectedChoice(BtChoice5, BtChoice1, BtChoice2, BtChoice3, BtChoice4, BtChoice5));
 
     private void goToResult(int score, int total) {
         Intent i = new Intent(TestActivity.this, ResultActivity.class);
@@ -146,5 +79,10 @@ public class TestActivity extends AppCompatActivity {
         i.putExtra(AppConstants.EXTRA_TOTAL, total);
         startActivity(i);
         finish();
+    }
+
+    private void setSelectedChoice(MaterialButton selected, MaterialButton... all) {
+        for (MaterialButton b : all) b.setSelected(false);
+        selected.setSelected(true);
     }
 }

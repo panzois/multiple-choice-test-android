@@ -4,14 +4,12 @@ plugins {
 
 android {
     namespace = "org.pzois.uniwa.android.multiplechoicetest"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36 // Σκέτο 35, χωρίς παρενθέσεις ή "release"
 
     defaultConfig {
         applicationId = "org.pzois.uniwa.android.multiplechoicetest"
         minSdk = 25
-        targetSdk = 36
+        targetSdk = 36 // Βάλτο ίδιο με το compileSdk
         versionCode = 1
         versionName = "1.0"
 
