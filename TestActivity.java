@@ -127,8 +127,8 @@ public class TestActivity extends AppCompatActivity {
 
     private void onNext() {
         if (engine.nextQuestion()) {
-            updateUI(); 
-            btNext.setVisibility(View.INVISIBLE); 
+            updateUI(); // Πάμε στην επόμενη ερώτηση
+            btNext.setVisibility(View.INVISIBLE); // Κρύβουμε πάλι το κουμπί Next
         } else {
             finishQuiz(); // Τέλος quiz
         }
