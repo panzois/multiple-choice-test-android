@@ -1,8 +1,10 @@
 package org.pzois.uniwa.android.multiplechoicetest;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -14,13 +16,18 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.multiplechoicetest.Question;
+import com.example.multiplechoicetest.QuestionBank;
+import com.example.multiplechoicetest.QuizEngine;
+
+import java.util.List;
+
 public class TestActivity extends AppCompatActivity {
 
-    private static final String TAG = "TestActivity";
-
     private String username;
+    private QuizEngine engine;
+    private QuestionBank db;
 
-    // UI
     private TextView tvTimer, tvQuestion;
     private ImageView ivQuestion;
     private Button[] choiceButtons;
@@ -38,36 +45,31 @@ public class TestActivity extends AppCompatActivity {
             return insets;
         });
 
-        // 1) get username
         username = getIntent().getStringExtra(AppConstants.EXTRA_USERNAME);
-        if (username == null || username.trim().isEmpty()) {
-            Log.e(TAG, "Missing username");
-            finish();
-            return;
-        }
-        Log.d(TAG, "Username received: " + username);
 
-        // 2) bind UI
         bindViews();
         bindEvents();
 
-        // 3) placeholder (μέχρι να κουμπώσει engine)
-        showPlaceholderQuestion();
+        // Role B Initialization
+        db = new QuestionBank(this);
+        List<Question> randomQuestions = db.getRandomQuestions(5);
+        engine = new QuizEngine(username, randomQuestions);
+
+
+        updateUI(); // Εμφάνιση 1ης ερώτησης
     }
+
+
 
     private void bindViews() {
         tvTimer = findViewById(R.id.TvTimer);
         tvQuestion = findViewById(R.id.TvQuestion);
         ivQuestion = findViewById(R.id.IvQuestion);
-
         choiceButtons = new Button[]{
-                findViewById(R.id.BtChoice1),
-                findViewById(R.id.BtChoice2),
-                findViewById(R.id.BtChoice3),
-                findViewById(R.id.BtChoice4),
+                findViewById(R.id.BtChoice1), findViewById(R.id.BtChoice2),
+                findViewById(R.id.BtChoice3), findViewById(R.id.BtChoice4),
                 findViewById(R.id.BtChoice5)
         };
-
         btNext = findViewById(R.id.BtNext);
     }
 
@@ -76,33 +78,65 @@ public class TestActivity extends AppCompatActivity {
             final int index = i;
             choiceButtons[i].setOnClickListener(v -> onAnswerSelected(index));
         }
-
         btNext.setOnClickListener(v -> onNext());
     }
 
-    private void showPlaceholderQuestion() {
-        tvTimer.setText("Timer: --");
-        tvQuestion.setText("Ερώτηση placeholder (θα έρθει από Quiz Engine)");
+    private void updateUI() {
+        Question current = engine.getCurrentQuestion();
+        if (current == null) return;
 
-        // προς το παρόν κρύβουμε εικόνα αν δεν έχουμε
-        ivQuestion.setImageDrawable(null);
-        ivQuestion.setVisibility(ImageView.GONE);
+        tvQuestion.setText(current.getText());
 
-        for (Button b : choiceButtons) {
-            b.setText("Option");
-            b.setEnabled(true);
-            b.setVisibility(Button.VISIBLE);
+        // ΔΙΑΧΕΙΡΙΣΗ ΕΙΚΟΝΑΣ (Απαίτηση Εκφώνησης)
+        if (current.getImageResId() != 0) {
+            ivQuestion.setImageResource(current.getImageResId());
+            ivQuestion.setVisibility(View.VISIBLE);
+        } else {
+            ivQuestion.setVisibility(View.GONE);
+        }
+
+        List<String> options = current.getOptions();
+        for (int i = 0; i < choiceButtons.length; i++) {
+            if (i < options.size()) {
+                choiceButtons[i].setText(options.get(i));
+                choiceButtons[i].setVisibility(View.VISIBLE);
+                choiceButtons[i].setEnabled(true);
+                choiceButtons[i].setBackgroundColor(Color.parseColor("#6200EE"));
+            } else {
+                choiceButtons[i].setVisibility(View.GONE);
+            }
         }
     }
 
     private void onAnswerSelected(int choiceIndex) {
-        // TODO: εδώ ο George θα κουμπώσει engine.submitAnswer(choiceIndex)
-        Toast.makeText(this, "Επέλεξες: " + (choiceIndex + 1), Toast.LENGTH_SHORT).show();
+        engine.submitAnswer(choiceIndex);
+
+        int correctIndex = engine.getCurrentQuestion().getCorrectOptionIndex();
+
+        for (int i = 0; i < choiceButtons.length; i++) {
+            choiceButtons[i].setEnabled(false); // Κλειδώνουμε τα κουμπιά
+
+            if (i == correctIndex) {
+                choiceButtons[i].setBackgroundColor(Color.GREEN);
+            } else if (i == choiceIndex) {
+                choiceButtons[i].setBackgroundColor(Color.RED);
+            }
+        }
+        btNext.setVisibility(View.VISIBLE);
     }
 
     private void onNext() {
-        // TODO: εδώ θα γίνει engine.nextQuestion() ή finish test
-        goToResult(0, AppConstants.QUESTIONS_PER_TEST);
+        if (engine.nextQuestion()) {
+            updateUI(); 
+            btNext.setVisibility(View.INVISIBLE); 
+        } else {
+            finishQuiz(); // Τέλος quiz
+        }
+    }
+
+    private void finishQuiz() {
+        db.saveScore(username, engine.getScore());
+        goToResult(engine.getScore(), engine.getTotalQuestions());
     }
 
     private void goToResult(int score, int total) {
@@ -110,7 +144,6 @@ public class TestActivity extends AppCompatActivity {
         i.putExtra(AppConstants.EXTRA_USERNAME, username);
         i.putExtra(AppConstants.EXTRA_SCORE, score);
         i.putExtra(AppConstants.EXTRA_TOTAL, total);
-        i.putExtra(AppConstants.EXTRA_TIMESTAMP, System.currentTimeMillis());
         startActivity(i);
         finish();
     }
