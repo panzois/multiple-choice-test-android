@@ -1,0 +1,3 @@
+org.pzois.uniwa.android.multiplechoicetest.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

@@ -9,10 +9,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import com.google.android.material.button.MaterialButton;
+import android.content.res.ColorStateList;
 
 public class TestActivity extends AppCompatActivity {
 
     private String username;
+
+    private MaterialButton BtChoice1, BtChoice2, BtChoice3, BtChoice4, BtChoice5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +31,33 @@ public class TestActivity extends AppCompatActivity {
         });
 
         Intent intent = getIntent();
-        username = intent.getStringExtra(LoginActivity.EXTRA_USERNAME);
+        username = intent.getStringExtra(AppConstants.EXTRA_USERNAME);
+
+        if (username == null || username.trim().isEmpty()) {
+            Log.e("TestActivity", "Missing username");
+            finish();
+            return;
+        }
+
+        // Bind buttons (IDs μένουν ίδια)
+        BtChoice1 = findViewById(R.id.BtChoice1);
+        BtChoice2 = findViewById(R.id.BtChoice2);
+        BtChoice3 = findViewById(R.id.BtChoice3);
+        BtChoice4 = findViewById(R.id.BtChoice4);
+        BtChoice5 = findViewById(R.id.BtChoice5);
+
+        // Click listeners: selected state
+        BtChoice1.setOnClickListener(v -> setSelectedChoice(BtChoice1, BtChoice1, BtChoice2, BtChoice3, BtChoice4, BtChoice5));
+        BtChoice2.setOnClickListener(v -> setSelectedChoice(BtChoice2, BtChoice1, BtChoice2, BtChoice3, BtChoice4, BtChoice5));
+        BtChoice3.setOnClickListener(v -> setSelectedChoice(BtChoice3, BtChoice1, BtChoice2, BtChoice3, BtChoice4, BtChoice5));
+        BtChoice4.setOnClickListener(v -> setSelectedChoice(BtChoice4, BtChoice1, BtChoice2, BtChoice3, BtChoice4, BtChoice5));
+        BtChoice5.setOnClickListener(v -> setSelectedChoice(BtChoice5, BtChoice1, BtChoice2, BtChoice3, BtChoice4, BtChoice5));
 
         Log.d("TestActivity", "Username received: " + username);
+    }
+
+    private void setSelectedChoice(MaterialButton selected, MaterialButton... all) {
+        for (MaterialButton b : all) b.setSelected(false);
+        selected.setSelected(true);
     }
 }

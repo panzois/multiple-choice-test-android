@@ -2,4 +2,19 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Background -->
+    <color name="teal_bg">#E6F4F1</color>
+    <color name="teal_200">#069494</color>
+    <color name="teal_sea">#9EFCFF</color>
+
+
+
+    <!-- Purple choices -->
+    <color name="purple_soft">#EDE7F6</color>
+    <color name="purple_outline">#B39DDB</color>
+    <color name="purple_pressed">#D1C4E9</color>
+
+    <!-- Text -->
+    <color name="text_primary">#1F1F1F</color>
 </resources>
