@@ -1,16 +1,26 @@
+# =========================
+# Android / Gradle
+# =========================
+.gradle/
+**/.gradle/
+build/
+**/build/
+.externalNativeBuild/
+.cxx/
+local.properties
+
+# =========================
+# Android Studio / IntelliJ
+# =========================
 .idea/
 *.iml
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.gradle
-/build
-/app/build/
-.externalNativeBuild
-.cxx
-local.properties
+*.ipr
+*.iws
+/out/
+
+# =========================
+# OS / Misc
+# =========================
 .DS_Store
+*.log
 /captures
