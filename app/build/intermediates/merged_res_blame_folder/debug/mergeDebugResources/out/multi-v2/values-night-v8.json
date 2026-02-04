@@ -4,7 +4,24 @@
             "outputFile": "org.pzois.uniwa.android.multiplechoicetest.app-mergeDebugResources-34:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Alex\\AndroidStudioProjects\\multiple-choice-test-android-panagiotis\\multiple-choice-test-android-panagiotis\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\Alex\\.gradle\\caches\\8.13\\transforms\\6d224fdb884dfc1e180b240711335638\\transformed\\appcompat-1.7.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "6,7,8,9,10,11,12,39",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "181,251,335,419,515,617,719,3701",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "246,330,414,510,612,714,808,3785"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Alex\\Downloads\\multiple-choice-test-android-main\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,23 +37,6 @@
                         "endLines": "5",
                         "endColumns": "12",
                         "endOffsets": "176"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Alex\\.gradle\\caches\\8.13\\transforms\\6d224fdb884dfc1e180b240711335638\\transformed\\appcompat-1.7.1\\res\\values-night-v8\\values-night-v8.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593,687",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "120,204,288,384,486,588,682,771"
-                    },
-                    "to": {
-                        "startLines": "6,7,8,9,10,11,12,39",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "181,251,335,419,515,617,719,3701",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "246,330,414,510,612,714,808,3785"
                     }
                 },
                 {

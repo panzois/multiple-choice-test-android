@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color card_gray
 color choice_bg
 color purple_outline
 color purple_pressed
