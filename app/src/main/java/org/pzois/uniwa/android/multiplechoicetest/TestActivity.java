@@ -1,14 +1,8 @@
 package org.pzois.uniwa.android.multiplechoicetest;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
-<<<<<<< HEAD
-=======
-import android.view.View;
-import android.widget.Button;
->>>>>>> 31c098850a955c9504180c383704a106e2b81c94
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,25 +17,11 @@ import com.google.android.material.button.MaterialButton;
 
 import java.util.List;
 
-import com.example.multiplechoicetest.Question;
-import com.example.multiplechoicetest.QuestionBank;
-import com.example.multiplechoicetest.QuizEngine;
-
-import java.util.List;
-
 public class TestActivity extends AppCompatActivity {
 
     private String username;
     private QuizEngine engine;
     private QuestionBank db;
-<<<<<<< HEAD
-=======
-
-    private TextView tvTimer, tvQuestion;
-    private ImageView ivQuestion;
-    private Button[] choiceButtons;
-    private Button btNext;
->>>>>>> 31c098850a955c9504180c383704a106e2b81c94
 
     private TextView tvQuestion;
     private ImageView ivQuestion;
@@ -85,7 +65,6 @@ public class TestActivity extends AppCompatActivity {
         btChoice5 = findViewById(R.id.BtChoice5);
         btNext    = findViewById(R.id.BtNext);
 
-<<<<<<< HEAD
         // --- Init DB & Engine ---
         db = new QuestionBank(this);
         List<Question> questions = db.getRandomQuestions(10); // π.χ. 10 ερωτήσεις
@@ -116,15 +95,6 @@ public class TestActivity extends AppCompatActivity {
 
         // Load first question
         loadQuestion();
-=======
-    private void goToResult(int score, int total) {
-        Intent i = new Intent(TestActivity.this, ResultActivity.class);
-        i.putExtra(AppConstants.EXTRA_USERNAME, username);
-        i.putExtra(AppConstants.EXTRA_SCORE, score);
-        i.putExtra(AppConstants.EXTRA_TOTAL, total);
-        startActivity(i);
-        finish();
->>>>>>> 31c098850a955c9504180c383704a106e2b81c94
     }
 
     private void loadQuestion() {
@@ -161,7 +131,6 @@ public class TestActivity extends AppCompatActivity {
         clearSelection();
         selected.setSelected(true);
     }
-<<<<<<< HEAD
 
     private void clearSelection() {
         btChoice1.setSelected(false);
@@ -182,6 +151,3 @@ public class TestActivity extends AppCompatActivity {
         finish();
     }
 }
-=======
-}
->>>>>>> 31c098850a955c9504180c383704a106e2b81c94

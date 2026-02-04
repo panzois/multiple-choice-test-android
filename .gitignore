@@ -14,7 +14,6 @@ local.properties
 # =========================
 .idea/
 *.iml
-<<<<<<< HEAD
 *.ipr
 *.iws
 /out/
@@ -25,20 +24,3 @@ local.properties
 .DS_Store
 *.log
 /captures
-=======
-.gradle
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
-/app/build/
-
->>>>>>> 31c098850a955c9504180c383704a106e2b81c94

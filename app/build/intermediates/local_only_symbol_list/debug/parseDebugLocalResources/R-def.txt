@@ -23,6 +23,7 @@ id BtNext
 id BtRestart
 id BtStart
 id CardContent
+id CardResult
 id CardTop
 id EtName
 id IvQuestion

@@ -3676,6 +3676,7 @@ id BtRestart
 id BtStart
 id CTRL
 id CardContent
+id CardResult
 id CardTop
 id EtName
 id FUNCTION

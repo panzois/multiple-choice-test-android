@@ -3675,6 +3675,7 @@ int id BtRestart 0x7f08000a
 int id BtStart 0x7f08000b
 int id CTRL 0x7f08000c
 int id CardContent 0x7f08000d
+int id CardResult 0x7f08021f
 int id CardTop 0x7f08000e
 int id EtName 0x7f08000f
 int id FUNCTION 0x7f080010
