@@ -42,6 +42,7 @@ id CardResult
 id CardTop
 id EtName
 id IvQuestion
+id PbTimer
 id TvQuestion
 id TvScore
 id TvStep

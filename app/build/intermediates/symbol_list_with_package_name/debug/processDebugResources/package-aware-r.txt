@@ -3698,6 +3698,7 @@ id FUNCTION
 id IvQuestion
 id META
 id NO_DEBUG
+id PbTimer
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
