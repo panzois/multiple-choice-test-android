@@ -6,6 +6,7 @@ import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.media.MediaPlayer;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,6 +32,9 @@ public class TestActivity extends AppCompatActivity {
 
     private Question currentQuestion;
     private int selectedAnswer = -1;
+
+    private MediaPlayer bgPlayer;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,6 +99,24 @@ public class TestActivity extends AppCompatActivity {
 
         // Load first question
         loadQuestion();
+
+        bgPlayer = MediaPlayer.create(this, R.raw.quiz_bg);
+        bgPlayer.setLooping(true);
+
+        // πολύ χαμηλή ένταση (ιδανική για εργασία)
+        bgPlayer.setVolume(0.15f, 0.15f);
+
+        bgPlayer.start();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (bgPlayer != null) {
+            bgPlayer.stop();
+            bgPlayer.release();
+            bgPlayer = null;
+        }
     }
 
     private void loadQuestion() {

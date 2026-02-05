@@ -55,6 +55,7 @@ layout activity_splash
 layout activity_test
 mipmap ic_launcher
 mipmap ic_launcher_round
+raw quiz_bg
 string app_name
 style Base.Theme.MultipleChoiceTest
 style Theme.MultipleChoiceTest

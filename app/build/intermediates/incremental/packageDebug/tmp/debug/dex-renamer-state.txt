@@ -1,4 +1,4 @@
-#Thu Feb 05 23:43:31 EET 2026
+#Fri Feb 06 00:26:54 EET 2026
 base.0=C\:\\Users\\Alex\\Documents\\GitHub\\Multiple-Choice-Test-Android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\Alex\\Documents\\GitHub\\Multiple-Choice-Test-Android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\Alex\\Documents\\GitHub\\Multiple-Choice-Test-Android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex

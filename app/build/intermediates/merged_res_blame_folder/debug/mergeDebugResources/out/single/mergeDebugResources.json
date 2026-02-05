@@ -1,150 +1,154 @@
 [
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/layout_activity_result.xml.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/layout/activity_result.xml"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\drawable_q_emc.jpg.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\drawable\\q_emc.jpg"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\drawable_q_olympic_games.jpg.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\drawable\\q_olympic_games.jpg"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/drawable_q_olympic_games.jpg.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/drawable/q_olympic_games.jpg"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\layout\\activity_login.xml"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/xml_backup_rules.xml.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\layout-sw600dp_activity_test.xml.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\layout-sw600dp\\activity_test.xml"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/layout-sw600dp_activity_test.xml.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/layout-sw600dp/activity_test.xml"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\layout_activity_result.xml.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\layout\\activity_result.xml"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/drawable_q_omirus.jpg.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/drawable/q_omirus.jpg"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\layout\\activity_splash.xml"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/drawable_q_van_gogh.jpg.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/drawable/q_van_gogh.jpg"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\drawable_q_mars.jpg.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\drawable\\q_mars.jpg"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/layout_activity_splash.xml.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/layout/activity_splash.xml"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\layout_activity_test.xml.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\layout\\activity_test.xml"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/drawable_q_greek_capital.jpg.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/drawable/q_greek_capital.jpg"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\drawable_q_hexagon.jpg.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\drawable\\q_hexagon.jpg"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/drawable_q_android.jpg.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/drawable/q_android.jpg"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/drawable_q_emc.jpg.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/drawable/q_emc.jpg"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/drawable_q_mammals.jpg.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/drawable/q_mammals.jpg"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\drawable_q_human_organs.jpg.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\drawable\\q_human_organs.jpg"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\color_choice_bg.xml.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\color\\choice_bg.xml"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/xml_data_extraction_rules.xml.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/drawable_q_thesaloniki.jpg.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/drawable/q_thesaloniki.jpg"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\drawable_q_water.jpg.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\drawable\\q_water.jpg"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/drawable_q_greek_revolution.jpg.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/drawable/q_greek_revolution.jpg"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\drawable_q_greek_revolution.jpg.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\drawable\\q_greek_revolution.jpg"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\drawable_q_zeus.jpg.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\drawable\\q_zeus.jpg"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\drawable_q_van_gogh.jpg.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\drawable\\q_van_gogh.jpg"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/drawable_ic_launcher_background.xml.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\drawable_q_android.jpg.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\drawable\\q_android.jpg"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/color_choice_bg.xml.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/color/choice_bg.xml"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/drawable_q_mars.jpg.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/drawable/q_mars.jpg"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/drawable_q_triangle.jpg.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/drawable/q_triangle.jpg"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\drawable_q_thesaloniki.jpg.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\drawable\\q_thesaloniki.jpg"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/drawable_q_zeus.jpg.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/drawable/q_zeus.jpg"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/layout_activity_test.xml.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/layout/activity_test.xml"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\drawable_q_greek_capital.jpg.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\drawable\\q_greek_capital.jpg"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/layout_activity_login.xml.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/layout/activity_login.xml"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/drawable_q_hexagon.jpg.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/drawable/q_hexagon.jpg"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\drawable_q_triangle.jpg.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\drawable\\q_triangle.jpg"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/drawable_q_human_organs.jpg.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/drawable/q_human_organs.jpg"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\drawable_q_omirus.jpg.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\drawable\\q_omirus.jpg"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/drawable_q_water.jpg.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/drawable/q_water.jpg"
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\drawable_q_mammals.jpg.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\drawable\\q_mammals.jpg"
     },
     {
-        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "org.pzois.uniwa.android.multiplechoicetest.app-debug-36:/raw_quiz_bg.mp3.flat",
+        "source": "org.pzois.uniwa.android.multiplechoicetest.app-main-38:/raw/quiz_bg.mp3"
+    },
+    {
+        "merged": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-debug-36:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Alex\\.gradle\\daemon\\8.13\\org.pzois.uniwa.android.multiplechoicetest.app-main-38:\\mipmap-xhdpi\\ic_launcher.webp"
     }
 ]
