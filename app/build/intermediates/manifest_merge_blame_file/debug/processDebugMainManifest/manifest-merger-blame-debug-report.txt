@@ -20,61 +20,61 @@
 15-->[androidx.core:core:1.16.0] C:\Users\Alex\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:5:5-32:19
+17-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:5:5-32:19
 18        android:allowBackup="true"
-18-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:6:9-35
+18-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 19-->[androidx.core:core:1.16.0] C:\Users\Alex\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
 20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:7:9-65
+20-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:7:9-65
 21        android:debuggable="true"
 22        android:extractNativeLibs="false"
 23        android:fullBackupContent="@xml/backup_rules"
-23-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:8:9-54
+23-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:8:9-54
 24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:9:9-43
+24-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:9:9-43
 25        android:label="@string/app_name"
-25-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:10:9-41
+25-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:10:9-41
 26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:11:9-54
+26-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:11:9-54
 27        android:supportsRtl="true"
-27-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:12:9-35
+27-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:12:9-35
 28        android:testOnly="true"
 29        android:theme="@style/Theme.MultipleChoiceTest" >
-29-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:13:9-56
+29-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:13:9-56
 30        <activity
-30-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:14:9-16:40
+30-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:14:9-16:40
 31            android:name="org.pzois.uniwa.android.multiplechoicetest.ResultActivity"
-31-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:15:13-43
+31-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:15:13-43
 32            android:exported="false" />
-32-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:16:13-37
+32-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:16:13-37
 33        <activity
-33-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:17:9-19:40
+33-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:17:9-19:40
 34            android:name="org.pzois.uniwa.android.multiplechoicetest.TestActivity"
-34-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:18:13-41
+34-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:18:13-41
 35            android:exported="false" />
-35-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:19:13-37
+35-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:19:13-37
 36        <activity
-36-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:20:9-22:40
+36-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:20:9-22:40
 37            android:name="org.pzois.uniwa.android.multiplechoicetest.LoginActivity"
-37-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:21:13-42
+37-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:21:13-42
 38            android:exported="false" />
-38-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:22:13-37
+38-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:22:13-37
 39        <activity
-39-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:23:9-31:20
+39-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:23:9-31:20
 40            android:name="org.pzois.uniwa.android.multiplechoicetest.SplashActivity"
-40-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:24:13-43
+40-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:24:13-43
 41            android:exported="true" >
-41-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:25:13-36
+41-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:25:13-36
 42            <intent-filter>
-42-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:26:13-30:29
+42-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:26:13-30:29
 43                <action android:name="android.intent.action.MAIN" />
-43-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:27:17-69
-43-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:27:25-66
+43-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:27:17-69
+43-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:27:25-66
 44
 45                <category android:name="android.intent.category.LAUNCHER" />
-45-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:29:17-77
-45-->C:\Users\Alex\Downloads\multiple-choice-test-android-main\app\src\main\AndroidManifest.xml:29:27-74
+45-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:29:17-77
+45-->C:\Users\Alex\Documents\GitHub\Multiple-Choice-Test-Android\app\src\main\AndroidManifest.xml:29:27-74
 46            </intent-filter>
 47        </activity>
 48
