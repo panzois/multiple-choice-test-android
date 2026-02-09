@@ -37,6 +37,19 @@ public class QuizEngine {
         return false;
     }
 
+    // πάει στην προηγούμενη ερώτηση
+    public boolean previousQuestion() {
+        if (currentQuestionIndex > 0) {
+            currentQuestionIndex--;
+            return true;
+        }
+        return false;
+    }
+
+    public boolean isLastQuestion() {
+        return currentQuestionIndex == questions.size() - 1;
+    }
+
     public int getScore() { return score; }
     public int getTotalQuestions() { return questions.size(); }
     public String getPlayerName() { return playerName; }
