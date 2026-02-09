@@ -114,7 +114,9 @@
                     android:layout_marginBottom="10dp"
                     android:minHeight="52dp"
                     android:text="Επιλογή 1"
-                    app:cornerRadius="16dp" />
+                    app:cornerRadius="16dp"
+                    app:strokeWidth="5dp"
+                    app:strokeColor="@color/choice_stroke" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/BtChoice2"
@@ -124,7 +126,9 @@
                     android:layout_marginBottom="10dp"
                     android:minHeight="52dp"
                     android:text="Επιλογή 2"
-                    app:cornerRadius="16dp" />
+                    app:cornerRadius="16dp"
+                    app:strokeWidth="5dp"
+                    app:strokeColor="@color/choice_stroke" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/BtChoice3"
@@ -134,7 +138,9 @@
                     android:layout_marginBottom="10dp"
                     android:minHeight="52dp"
                     android:text="Επιλογή 3"
-                    app:cornerRadius="16dp" />
+                    app:cornerRadius="16dp"
+                    app:strokeWidth="5dp"
+                    app:strokeColor="@color/choice_stroke" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/BtChoice4"
@@ -144,7 +150,9 @@
                     android:layout_marginBottom="10dp"
                     android:minHeight="52dp"
                     android:text="Επιλογή 4"
-                    app:cornerRadius="16dp" />
+                    app:cornerRadius="16dp"
+                    app:strokeWidth="5dp"
+                    app:strokeColor="@color/choice_stroke" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/BtChoice5"
@@ -153,7 +161,9 @@
                     android:layout_height="wrap_content"
                     android:minHeight="52dp"
                     android:text="Επιλογή 5"
-                    app:cornerRadius="16dp" />
+                    app:cornerRadius="16dp"
+                    app:strokeWidth="5dp"
+                    app:strokeColor="@color/choice_stroke" />
 
             </LinearLayout>
         </ScrollView>
