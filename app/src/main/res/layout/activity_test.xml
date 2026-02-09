@@ -102,7 +102,7 @@
                     android:layout_marginBottom="14dp"
                     android:adjustViewBounds="true"
                     android:scaleType="centerInside"
-                    android:maxHeight="220dp"
+                    android:maxHeight="180dp"
                     android:contentDescription="@null"
                     tools:srcCompat="@tools:sample/avatars" />
 
