@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -32,7 +34,7 @@ public class TestActivity extends AppCompatActivity {
     private ImageView ivQuestion;
     private ProgressBar pbTimer;
 
-    private MaterialButton btBack, btNext;
+    private MaterialButton btNext;
     private MaterialButton btChoice1, btChoice2, btChoice3, btChoice4, btChoice5;
 
     private Question currentQuestion;
@@ -74,7 +76,6 @@ public class TestActivity extends AppCompatActivity {
         ivQuestion = findViewById(R.id.IvQuestion);
         pbTimer    = findViewById(R.id.PbTimer);
 
-        btBack = findViewById(R.id.BtBack);
         btNext = findViewById(R.id.BtNext);
 
         btChoice1 = findViewById(R.id.BtChoice1);
@@ -95,7 +96,7 @@ public class TestActivity extends AppCompatActivity {
         btChoice4.setOnClickListener(v -> selectAnswer(3, btChoice4));
         btChoice5.setOnClickListener(v -> selectAnswer(4, btChoice5));
 
-        // ===== NEXT =====
+        // ===== NEXT / FINISH =====
         btNext.setOnClickListener(v -> {
             if (selectedAnswer == -1) {
                 Toast.makeText(this, "Διάλεξε απάντηση", Toast.LENGTH_SHORT).show();
@@ -107,37 +108,25 @@ public class TestActivity extends AppCompatActivity {
             if (engine.nextQuestion()) {
                 loadQuestion();
             } else {
-                // 🔔 Play finish sound
+                // 🔔 Finish sound
                 if (finishPlayer != null) {
                     finishPlayer.start();
                 }
 
-                // ⏳ Μικρή καθυστέρηση για να ακουστεί ο ήχος
-                new android.os.Handler().postDelayed(this::goToResult, 400);
-                }
-        });
-
-        // ===== BACK (μόνο αν δεν έχει απαντηθεί) =====
-        btBack.setOnClickListener(v -> {
-            if (selectedAnswer != -1) {
-                Toast.makeText(this,
-                        "Δεν μπορείς να γυρίσεις πίσω αφού απαντήσεις",
-                        Toast.LENGTH_SHORT).show();
-                return;
-            }
-
-            if (engine.previousQuestion()) {
-                loadQuestion();
+                // ⏳ μικρή καθυστέρηση να ακουστεί ο ήχος
+                new Handler(Looper.getMainLooper()).postDelayed(this::goToResult, 400);
             }
         });
 
         // ===== BACKGROUND MUSIC =====
         bgPlayer = MediaPlayer.create(this, R.raw.quiz_bg);
-        bgPlayer.setLooping(true);
-        bgPlayer.setVolume(0.15f, 0.15f);
-        bgPlayer.start();
+        if (bgPlayer != null) {
+            bgPlayer.setLooping(true);
+            bgPlayer.setVolume(0.15f, 0.15f);
+            bgPlayer.start();
+        }
 
-        // ===== finish test sound =====
+        // ===== FINISH SOUND =====
         finishPlayer = MediaPlayer.create(this, R.raw.finish_sound);
 
         // ===== LOAD FIRST QUESTION =====
@@ -155,7 +144,7 @@ public class TestActivity extends AppCompatActivity {
             return;
         }
 
-        // Step (dynamic)
+        // ===== Step (dynamic) =====
         tvStep.setText(String.format(
                 Locale.getDefault(),
                 "Ερώτηση %d/%d",
@@ -172,17 +161,20 @@ public class TestActivity extends AppCompatActivity {
         btChoice4.setText(opts.get(3));
         btChoice5.setText(opts.get(4));
 
+        // ===== Image =====
         if (currentQuestion.getImageResId() != 0) {
             ivQuestion.setVisibility(ImageView.VISIBLE);
             ivQuestion.setImageResource(currentQuestion.getImageResId());
         } else {
             ivQuestion.setVisibility(ImageView.GONE);
+            ivQuestion.setImageDrawable(null);
         }
 
+        // reset selection
         selectedAnswer = -1;
         clearSelection();
 
-        // ===== epomeno allazei se telos =====
+        // ===== Next text: ΕΠΟΜΕΝΟ / ΤΕΛΟΣ =====
         if (engine.isLastQuestion()) {
             btNext.setText("ΤΕΛΟΣ");
         } else {
@@ -212,8 +204,8 @@ public class TestActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                Toast.makeText(TestActivity.this,
-                        "Τέλος χρόνου!", Toast.LENGTH_LONG).show();
+                pbTimer.setProgress(0);
+                Toast.makeText(TestActivity.this, "Τέλος χρόνου!", Toast.LENGTH_LONG).show();
                 goToResult();
             }
         }.start();
@@ -234,7 +226,10 @@ public class TestActivity extends AppCompatActivity {
     }
 
     private void goToResult() {
-        if (countDownTimer != null) countDownTimer.cancel();
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+            countDownTimer = null;
+        }
 
         db.saveScore(username, engine.getScore());
 
@@ -249,19 +244,25 @@ public class TestActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        if (bgPlayer != null && bgPlayer.isPlaying()) bgPlayer.pause();
+        if (bgPlayer != null && bgPlayer.isPlaying()) {
+            bgPlayer.pause();
+        }
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        if (bgPlayer != null) bgPlayer.start();
+        if (bgPlayer != null) {
+            bgPlayer.start();
+        }
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+
         if (bgPlayer != null) {
+            try { bgPlayer.stop(); } catch (Exception ignored) {}
             bgPlayer.release();
             bgPlayer = null;
         }

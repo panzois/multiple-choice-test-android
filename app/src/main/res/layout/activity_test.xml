@@ -157,7 +157,7 @@
         </ScrollView>
     </com.google.android.material.card.MaterialCardView>
 
-    <!-- ================= BOTTOM BAR ================= -->
+    <!-- ================= BOTTOM BAR (ONLY NEXT) ================= -->
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/CardBottom"
         android:layout_width="0dp"
@@ -177,23 +177,9 @@
             android:padding="12dp">
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/BtBack"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:minHeight="54dp"
-                android:text="ΠΡΟΗΓΟΥΜΕΝΟ"
-                app:cornerRadius="14dp" />
-
-            <Space
-                android:layout_width="12dp"
-                android:layout_height="0dp" />
-
-            <com.google.android.material.button.MaterialButton
                 android:id="@+id/BtNext"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:minHeight="54dp"
                 android:text="ΕΠΟΜΕΝΟ"
                 app:cornerRadius="14dp" />
