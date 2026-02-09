@@ -98,10 +98,11 @@
                 <ImageView
                     android:id="@+id/IvQuestion"
                     android:layout_width="match_parent"
-                    android:layout_height="260dp"
-                    android:layout_marginBottom="16dp"
-                    android:scaleType="fitCenter"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
                     android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:maxHeight="220dp"
                     android:contentDescription="@null"
                     tools:srcCompat="@tools:sample/avatars" />
 
