@@ -22,6 +22,7 @@ import com.google.android.material.button.MaterialButton;
 
 import java.util.List;
 import java.util.Locale;
+import static org.pzois.uniwa.android.multiplechoicetest.AppConstants.TOTAL_TIME;
 
 public class TestActivity extends AppCompatActivity {
 
