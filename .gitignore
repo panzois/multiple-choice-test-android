@@ -5,8 +5,10 @@
 **/.gradle/
 build/
 **/build/
+app/build/
 .externalNativeBuild/
 .cxx/
+app/.cxx/
 local.properties
 
 # =========================

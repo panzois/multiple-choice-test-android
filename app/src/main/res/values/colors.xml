@@ -17,4 +17,7 @@
 
     <!-- Text -->
     <color name="text_primary">#1F1F1F</color>
+
+    <!-- Card Color -->
+    <color name="card_gray">#9B9595</color>
 </resources>
