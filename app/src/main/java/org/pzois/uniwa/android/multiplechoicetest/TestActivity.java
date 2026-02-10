@@ -44,10 +44,6 @@ public class TestActivity extends AppCompatActivity {
     private MediaPlayer bgPlayer;
     private MediaPlayer finishPlayer;
 
-    // ===== ΣΥΝΟΛΙΚΟΣ ΧΡΟΝΟΣ TEST =====
-    private static final long TOTAL_TIME = 5 * 60 * 1000; // 5 λεπτά
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
@@ -60,6 +56,7 @@ public class TestActivity extends AppCompatActivity {
         });
 
         // ===== USERNAME =====
+
         Intent intent = getIntent();
         username = intent.getStringExtra(AppConstants.EXTRA_USERNAME);
 
@@ -76,7 +73,7 @@ public class TestActivity extends AppCompatActivity {
         ivQuestion = findViewById(R.id.IvQuestion);
         pbTimer    = findViewById(R.id.PbTimer);
 
-        btNext = findViewById(R.id.BtNext);
+        btNext     = findViewById(R.id.BtNext);
 
         btChoice1 = findViewById(R.id.BtChoice1);
         btChoice2 = findViewById(R.id.BtChoice2);
@@ -166,6 +163,7 @@ public class TestActivity extends AppCompatActivity {
             ivQuestion.setVisibility(ImageView.VISIBLE);
             ivQuestion.setImageResource(currentQuestion.getImageResId());
         } else {
+            ivQuestion.setImageDrawable(null);
             ivQuestion.setVisibility(ImageView.GONE);
             ivQuestion.setImageDrawable(null);
         }
@@ -182,7 +180,7 @@ public class TestActivity extends AppCompatActivity {
         }
     }
 
-    // ===== GLOBAL TIMER =====
+    // ===== GLOBAL TIMER 5 ΛΕΠΤΩΝ =====
     private void startGlobalTimer() {
         pbTimer.setMax((int) TOTAL_TIME);
         pbTimer.setProgress((int) TOTAL_TIME);
@@ -192,20 +190,27 @@ public class TestActivity extends AppCompatActivity {
             public void onTick(long millisUntilFinished) {
                 pbTimer.setProgress((int) millisUntilFinished);
 
-                long sec = millisUntilFinished / 1000;
-                long min = sec / 60;
-                long s   = sec % 60;
+                long seconds = millisUntilFinished / 1000;
+                long minutes = seconds / 60;
+                long secs    = seconds % 60;
 
-                tvTimer.setText(String.format(
-                        Locale.getDefault(),
-                        "⏱ %02d:%02d", min, s
-                ));
+                tvTimer.setText(
+                        String.format(Locale.getDefault(),
+                                "⏱ %02d:%02d", minutes, secs)
+                );
             }
 
             @Override
             public void onFinish() {
                 pbTimer.setProgress(0);
-                Toast.makeText(TestActivity.this, "Τέλος χρόνου!", Toast.LENGTH_LONG).show();
+                tvTimer.setText("⏱ 00:00");
+
+                Toast.makeText(
+                        TestActivity.this,
+                        "Τέλος χρόνου!",
+                        Toast.LENGTH_LONG
+                ).show();
+
                 goToResult();
             }
         }.start();
