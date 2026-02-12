@@ -6,7 +6,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< Updated upstream
     tools:context=".SplashActivity">
 
     <!-- Τίτλος Εφαρμογής -->
@@ -55,87 +54,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TvTeam" />
-=======
-    android:background="@color/app_background"
-    tools:context=".SplashActivity">
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardSplash"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        app:cardCornerRadius="24dp"
-        app:cardElevation="8dp"
-        app:cardBackgroundColor="@color/app_primary"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="32dp"
-            android:gravity="center">
-
-            <!-- Title -->
-            <TextView
-                android:id="@+id/TvTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="MULTIPLE CHOICE TEST"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:letterSpacing="0.05"
-                android:textColor="@color/white"
-                android:gravity="center"/>
-
-            <!-- Subtitle -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Test Γνώσεων 🎓"
-                android:textSize="16sp"
-                android:textColor="@color/white"
-                android:layout_marginTop="12dp"
-                android:alpha="0.9"
-                android:gravity="center"/>
-
-            <!-- Team -->
-            <TextView
-                android:id="@+id/TvTeam"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="👤 Created by:\nΑλέξανδρος Τσαμπρούνης – mscict24081\nΠαναγιώτης Ζώης – mscict24025\nΓεώργιος Γιαννακόπουλος – mscict24011"
-                android:textSize="14sp"
-                android:textColor="@color/white"
-                android:lineSpacingExtra="4dp"
-                android:gravity="center"
-                android:layout_marginTop="28dp"
-                android:alpha="0.85"/>
-
-            <com.google.android.material.button.MaterialButton
-    android:id="@+id/BtStart"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="ΣΥΝΕΧΕΙΑ"
-    android:layout_marginTop="40dp"
-
-    app:cornerRadius="50dp"
-    app:backgroundTint="@color/white"
-    android:textColor="@color/app_primary"
-
-    android:elevation="10dp"
-    android:translationZ="4dp"
-
-    app:strokeWidth="1dp"
-    app:strokeColor="@color/app_primary"
-    app:rippleColor="#335E4AA6"/>
-
-        </LinearLayout>
-
-    </com.google.android.material.card.MaterialCardView>
->>>>>>> Stashed changes
 
 </androidx.constraintlayout.widget.ConstraintLayout>
