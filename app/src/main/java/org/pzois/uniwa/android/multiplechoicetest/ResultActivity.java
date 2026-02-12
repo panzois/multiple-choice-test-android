@@ -18,15 +18,12 @@ import java.text.DateFormat;
 import java.util.Date;
 
 public class ResultActivity extends AppCompatActivity {
-<<<<<<< Updated upstream
-=======
     QuestionBank dbHelper;
     private TextView TvScore;
     private Button btnRestart;
     private Button btnExit;
 
 
->>>>>>> Stashed changes
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,8 +38,6 @@ public class ResultActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-<<<<<<< Updated upstream
-=======
 
         // Σύνδεση Κουμπιού 🏆 ΙΣΤΟΡΙΚΟ ΑΠΟΤΕΛΕΣΜΑΤΩΝ
         Button btnHistory = findViewById(R.id.btnShowHistory);
@@ -113,6 +108,5 @@ public class ResultActivity extends AppCompatActivity {
                 .setMessage(builder.toString())
                 .setPositiveButton("OK", null)
                 .show();
->>>>>>> Stashed changes
     }
 } 

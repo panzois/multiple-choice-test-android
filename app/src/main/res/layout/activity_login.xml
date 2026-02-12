@@ -6,28 +6,57 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/app_background"
     tools:context=".LoginActivity">
 
     <!-- Κάρτα Login -->
     <com.google.android.material.card.MaterialCardView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <Button
-        android:id="@+id/BtBegin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EtName" />
+        <!-- Περιεχόμενο Κάρτας -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Input Name -->
+            <EditText
+                android:id="@+id/EtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:ems="10"
+                android:hint="Name"
+                android:importantForAutofill="yes"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_primary"/>
+
+            <!-- Start Button -->
+            <Button
+                android:id="@+id/BtBegin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/app_primary"
+                android:text="ΞΕΚΙΝΗΣΕ ΤΟ ΤΕΣΤ"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
