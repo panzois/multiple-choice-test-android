@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< Updated upstream
     tools:context=".ResultActivity">
 
     <TextView
@@ -26,4 +27,85 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TvScore" />
+=======
+    android:padding="24dp"
+    android:background="@color/app_background"
+    tools:context=".ResultActivity">
+
+    <!-- Card Score -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/CardResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/app_primary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnShowHistory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.40">
+
+        <TextView
+            android:id="@+id/TvScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:lineSpacingExtra="10dp"
+            tools:text="Score: 8/10" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Button History -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnShowHistory"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:text="🏆 ΙΣΤΟΡΙΚΟ ΑΠΟΤΕΛΕΣΜΑΤΩΝ"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/app_primary"
+        app:cornerRadius="999dp"
+        app:layout_constraintTop_toBottomOf="@id/CardResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnRestart"/>
+
+    <!-- Button Restart -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRestart"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="ΠΑΙΞΕ ΞΑΝΑ"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/app_primary"
+        app:cornerRadius="999dp"
+        app:layout_constraintTop_toBottomOf="@id/btnShowHistory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnExit"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!-- Button Exit -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnExit"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="8dp"
+        android:text="ΕΞΟΔΟΣ"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/app_primary"
+        app:cornerRadius="999dp"
+        app:layout_constraintTop_toBottomOf="@id/btnShowHistory"
+        app:layout_constraintStart_toEndOf="@id/btnRestart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+>>>>>>> Stashed changes
 </androidx.constraintlayout.widget.ConstraintLayout>

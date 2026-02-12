@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- Basic -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+<<<<<<< Updated upstream
+=======
+
+    <!-- App Background -->
+    <color name="app_background">#069494</color>
+
+    <!-- Primary Button Color -->
+    <color name="app_primary">#5E4AA6</color>
+
+    <color name="choice_border_color">#3F347F</color>
+
+    <!-- Text -->
+    <color name="text_primary">#1F1F1F</color>
+
+>>>>>>> Stashed changes
 </resources>
