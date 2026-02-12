@@ -12,5 +12,5 @@ public final class AppConstants {
 
     // Quiz settings (Integrator can tune)
     public static final int QUESTIONS_PER_TEST = 10;
-    public static final long TEST_DURATION_MS = 1_800_000; // 30 λεπτά!!! (μπορεί να το αλλάξουμε)
+    public static final long TOTAL_TIME = 5 * 60 * 1000L; // 5 λεπτά
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,33 +9,50 @@
 <<<<<<< Updated upstream
     tools:context=".SplashActivity">
 
+    <!-- Τίτλος Εφαρμογής -->
     <TextView
         android:id="@+id/TvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="TextView"
+        android:text="Multiple Choice Test"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/TvTeam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
 
+    <!-- Ονόματα Ομάδας -->
     <TextView
         android:id="@+id/TvTeam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Αλέξανδρος Τσαμπρούνης – Mscict24081\nΠαναγιώτης Ζώης – Mscict24025\nΓεώργιος Γιαννακόπουλος – Mscict24011"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:lineSpacingExtra="6dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/TvTitle"
+        app:layout_constraintBottom_toTopOf="@+id/BtStart"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TvTitle" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
 
+    <!-- Κουμπί Συνέχεια -->
     <Button
         android:id="@+id/BtStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="ΣΥΝΕΧΕΙΑ"
+        android:textSize="16sp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:backgroundTint="@color/purple_outline"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/TvTeam"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TvTeam" />
 =======

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -12,9 +13,10 @@
 >>>>>>> Stashed changes
     tools:context=".TestActivity">
 
-    <TextView
-        android:id="@+id/TvTimer"
-        android:layout_width="wrap_content"
+    <!-- ================= TOP BAR ================= -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/CardTop"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
 <<<<<<< Updated upstream
         android:layout_marginTop="50dp"
@@ -258,48 +260,144 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CardTop"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtChoice1" />
-
-    <Button
-        android:id="@+id/Btchoice3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtChoice2" />
-
-    <Button
-        android:id="@+id/BtChoice4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Btchoice3" />
-
-    <Button
-        android:id="@+id/BtChoice5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtChoice4" />
-
-    <Button
-        android:id="@+id/BtNext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/CardContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp"
+        app:layout_constraintTop_toBottomOf="@id/PbTimer"
+        app:layout_constraintBottom_toTopOf="@id/CardBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/TvQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="Ερώτηση εδώ..."
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+                <ImageView
+                    android:id="@+id/IvQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:maxHeight="180dp"
+                    android:contentDescription="@null"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/BtChoice1"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:minHeight="52dp"
+                    android:text="Επιλογή 1"
+                    app:cornerRadius="16dp"
+                    app:strokeWidth="5dp"
+                    app:strokeColor="@color/choice_stroke" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/BtChoice2"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:minHeight="52dp"
+                    android:text="Επιλογή 2"
+                    app:cornerRadius="16dp"
+                    app:strokeWidth="5dp"
+                    app:strokeColor="@color/choice_stroke" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/BtChoice3"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:minHeight="52dp"
+                    android:text="Επιλογή 3"
+                    app:cornerRadius="16dp"
+                    app:strokeWidth="5dp"
+                    app:strokeColor="@color/choice_stroke" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/BtChoice4"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:minHeight="52dp"
+                    android:text="Επιλογή 4"
+                    app:cornerRadius="16dp"
+                    app:strokeWidth="5dp"
+                    app:strokeColor="@color/choice_stroke" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/BtChoice5"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="52dp"
+                    android:text="Επιλογή 5"
+                    app:cornerRadius="16dp"
+                    app:strokeWidth="5dp"
+                    app:strokeColor="@color/choice_stroke" />
+
+            </LinearLayout>
+        </ScrollView>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- ================= BOTTOM BAR (ONLY NEXT) ================= -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/CardBottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardContent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/BtNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="54dp"
+                android:text="ΕΠΟΜΕΝΟ"
+                app:cornerRadius="14dp" />
+                
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

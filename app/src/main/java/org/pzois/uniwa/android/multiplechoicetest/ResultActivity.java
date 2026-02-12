@@ -1,12 +1,21 @@
 package org.pzois.uniwa.android.multiplechoicetest;
 
+import android.content.Intent;
+import android.database.Cursor; // Προστέθηκε
 import android.os.Bundle;
+import android.view.View; // Προστέθηκε
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog; // Προστέθηκε
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import java.text.DateFormat;
+import java.util.Date;
 
 public class ResultActivity extends AppCompatActivity {
 <<<<<<< Updated upstream
@@ -24,6 +33,9 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_result);
+
+        dbHelper = new QuestionBank(this);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -103,4 +115,4 @@ public class ResultActivity extends AppCompatActivity {
                 .show();
 >>>>>>> Stashed changes
     }
-}
+} 
