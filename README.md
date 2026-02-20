@@ -99,8 +99,6 @@ Team project developed with:
 
 ## 📷 Screenshots
 
-## 📷 Screenshots
-
 <p align="center">
   <img src="screenshots/android_splash_screen.png" width="220"/>
   <img src="screenshots/android_login_screen.png" width="220"/>
