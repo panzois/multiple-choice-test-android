@@ -98,3 +98,14 @@ Team project developed with:
 ---
 
 ## 📷 Screenshots
+
+## 📷 Screenshots
+
+### Login Screen
+![Login Screen](screenshots/android_splash_screen.png)
+
+### Quiz Screen
+![Quiz Screen](screenshots/quiz.png)
+
+### Results Screen
+![Results Screen](screenshots/results.png)
