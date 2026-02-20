@@ -101,11 +101,13 @@ Team project developed with:
 
 ## 📷 Screenshots
 
-### Login Screen
-![Login Screen](screenshots/android_splash_screen.png)
+<p align="center">
+  <img src="screenshots/android_splash_screen.png" width="220"/>
+  <img src="screenshots/android_login_screen.png" width="220"/>
+  <img src="screenshots/android_test_screen.png" width="220"/>
+</p>
 
-### Quiz Screen
-![Quiz Screen](screenshots/quiz.png)
-
-### Results Screen
-![Results Screen](screenshots/results.png)
+<p align="center">
+  <img src="screenshots/android_results_screen.png" width="220"/>
+  <img src="screenshots/android_scoreboard_screen.png" width="220"/>
+</p>
